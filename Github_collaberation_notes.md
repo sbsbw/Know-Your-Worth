@@ -23,5 +23,5 @@ This is a short list of steps to successfully branch the repo and commit changes
 
 ![Commit Message](images-for-notes/commit-message.png)
 
-4. Push the commited changes to the repo.
+4. sync changes and Push the commited changes to the repo.
 
