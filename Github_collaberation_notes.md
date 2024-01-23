@@ -23,6 +23,25 @@ This is a short list of steps to successfully branch the repo and commit changes
 
 ![Commit Message](images-for-notes/commit-message.png)
 
-4. sync changes and Push the commited changes to the repo.
+4. sync changes to Push the commited changes to the repo.
 
 ![sync changes](images-for-notes/sync-changes.png)
+
+5. Inform the team that there is a new branch to be reviewed for merge.
+
+## How to merge a branch
+
+1. Compare and pull branch to main.
+
+- T
+
+![Compare and pull](images-for-notes/compare-and-pull.png)
+
+2. Add notes on your changes you have made and say anything that teammates may need to understand. Click Creat pull request.
+
+![Create Pull Request](images-for-notes/main-branch-pull-request.png)
+
+3. This section teammates can review your changes before we merge with main. With a teammates approval, you can click merge.
+- If you are the teammate reviewing, you can add a comments on the work here.
+
+![Comments](images-for-notes/pull-request-comments.png)
