@@ -25,3 +25,4 @@ This is a short list of steps to successfully branch the repo and commit changes
 
 4. sync changes and Push the commited changes to the repo.
 
+![sync changes](images-for-notes/sync-changes.png)
