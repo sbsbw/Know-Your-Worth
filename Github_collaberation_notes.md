@@ -33,8 +33,6 @@ This is a short list of steps to successfully branch the repo and commit changes
 
 1. Compare and pull branch to main.
 
-- T
-
 ![Compare and pull](images-for-notes/compare-and-pull.png)
 
 2. Add notes on your changes you have made and say anything that teammates may need to understand. Click Creat pull request.
