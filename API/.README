@@ -1,0 +1,3 @@
+// 
+# This code defines a middleware function named authenticateToken that is responsible for authenticating JSON Web Tokens (JWT) sent in the Authorization header of an HTTP request. It checks if a token exists in the request headers, verifies its authenticity using the jsonwebtoken library, and if successful, attaches the decoded user information to the request object (req.user). If the token is missing or invalid, it sends an HTTP status code of 401 (Unauthorized) or 403 (Forbidden), respectively.
+# create some test cases to make sure yor code is working
