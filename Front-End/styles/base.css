@@ -154,6 +154,7 @@ section div {
   margin: 0 auto;
   margin-top: 20px;
 }
+
 .invitation-banner:hover{
   opacity: 0.7;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -171,3 +172,29 @@ footer {
   width: 30px;
   height: auto;
 }
+
+/* footer{
+  background-color:var(#fff);
+  padding: 25px 50px;
+}
+
+footer a{
+  text-decoration: none;
+  margin-top: 200px;
+  background-color: var(--nav-background-color);
+  color:  var(--nav-link-color);
+}
+
+footer a:hover{
+  background-color: #26719D;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer p{
+  font-size: 1.2em;
+}
+
+footer p a:hover{
+  text-decoration: underline;
+  font-family: Roboto, Helvetica, sans-serif;
+} */

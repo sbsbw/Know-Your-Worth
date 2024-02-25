@@ -1,52 +1,52 @@
 @media only screen and (max-width: 700px) {
-    body main div {
-      width: 90%; /* Adjust width for smaller screens */
-    }
-  
-    header {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items */
-      display: block;
-    }
-    #logo {
-      display: block;
-      margin: 0 auto;
-    }
-    nav{
-      display: block;
-      margin: 0 auto;
-    }
-  
-    .menu {
-      display: block;
-      margin: 0 auto;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      padding: 0;
-    
-       /* Center menu items */
-    }
-  
-    .menu li {
-      width: auto;
-      margin: 0 auto;
-      padding: 5px 40px;
-      border: 3px solid white;
-      text-align: center;
-    }
-  
-    section {
-      flex-direction: column; /* Stack image and content vertically */
-      margin-top: 0em;
-      margin-left: 0em;
-    }
-  
-    section img {
-      width: 100%; /* Make images fill container width */
-      height: auto; /* Maintain aspect ratio */
-    }
-  
-    section div {
-      padding: 10px; /* Reduce padding for content */
-    }
+  body main div {
+    width: 90%; /* Adjust width for smaller screens */
   }
+
+  header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    display: block;
+  }
+  #logo {
+    display: block;
+    margin: 0 auto;
+  }
+  nav{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .menu {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+  
+     /* Center menu items */
+  }
+
+  .menu li {
+    width: auto;
+    margin: 0 auto;
+    padding: 5px 40px;
+    border: 3px solid white;
+    text-align: center;
+  }
+
+  section {
+    flex-direction: column; /* Stack image and content vertically */
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+
+  section img {
+    width: 100%; /* Make images fill container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  section div {
+    padding: 10px; /* Reduce padding for content */
+  }
+}
