@@ -1,0 +1,30 @@
+swagger: '2.0'
+info:
+  title: Your API Title
+  description: Description of your API
+  version: 1.0.0
+basePath: /api
+schemes:
+  - https
+paths:
+  /resource:
+    get:
+      summary: Retrieve all resources
+      responses:
+        200:
+          description: Successful operation
+    post:
+      summary: Create a new resource
+      parameters:
+        - in: body
+          name: resource
+          description: Resource object
+          required: true
+          schema:
+            type: object
+            properties:
+              property1:
+                type: string
+              property2:
+                type: integer;
+                

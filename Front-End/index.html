@@ -1,22 +1,24 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Know Your Worth</title>
-    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Know Your Worth</title>
+  <link href="./styles/base.css" rel="stylesheet" />
+  <link href="./styles/smaller.css" rel="stylesheet" />
+</head>
 
   <body>
     <header>
-      <img id="logo" src="./images/money-logo.png" alt="Logo" height="auto" width="100px" />
+      <img id="logo" src="./images/money-logo.png" alt="Logo" height="auto" width="100px" loading="lazy"/>
       <!-- <button id="myBtn"></button> -->
       <nav>
         <ul class="menu">
-          <li><a class="current-menu-item" href="">Home</a></li>
-          <li><a class="menu-item" href="">Job Search</a></li>
-          <li><a class="link" href="">Job Help</a></li>
-          <li><a class="link" href="">About Us</a></li>
+          <li><a class="current-menu-item" href="./index.html">Home</a></li>
+          <li><a class="menu-item" href="./job-search.html">Job Search</a></li>
+          <li><a class="link" href="./job-help.html">Job Help</a></li>
+          <li><a class="link" href="./about-us.html">About Us</a></li>
         </ul>
       </nav>
     </header>
@@ -28,24 +30,24 @@
       <div class="big-box">
         <div class="divider"></div>
         <section>
-          <img src="images/salary-bell-curve.webp" alt="bell-curve">
-          <div>
+          <img src="images/salary-bell-curve.webp" alt="bell-curve" loading="lazy">
+          <div class="home-container">
             <h2>Job Search</h2>
             <p>Use KnowMyWorth as a resource to see how your salary compares to other people that have similar education and work experience. You can find this data using the </p>
           </div>
         </section>
         <div class="divider"></div>
         <section>
-          <img src="images/US-salary-map.webp" alt="Map image">
-          <div>
+          <img src="images/US-salary-map.webp" alt="Map image" loading="lazy">
+          <div class="home-container">
             <h2>Location Matters</h2>
             <p>KnowYourWorth uses a database that recieves salary data from many different locations. This will allow us to give you the most accurate salary information possible.</p>
           </div>
         </section>
         <div class="divider"></div>
         <section>
-          <img src="images/job-interview.webp" alt="Job Interview Image">
-          <div>
+          <img src="images/job-interview.webp" alt="Job Interview Image" loading="lazy"> 
+          <div class="home-container">
             <h2>Job Help</h2>
             <p>This section explains ways to find a job, become relevant canidate, and take initiative with your life when looking for future opportunities. </p> 
           </div>
@@ -54,26 +56,62 @@
         <h6>Additional Resources "clickable link boxes will go here"</h6>
         
       </div>
-      <img class="invitation-banner" alt="invitation-banner" src="">
-    </main>
-    <footer>
+      <div>
+      <a href="./"></a>
+      <picture>
+        <source media="(max-width: 700px)" srcset="./images/salary-sm.webp">
+        <img class="invitation-banner" alt="invitation-banner" src="./images/salary.webp" loading="lazy">
+      </picture>
+    </div>
+  </main>
+  <!-- <footer>
+    div for the logos
+    <div class="logo-section">
       <div class="sm-logos">
         <a href="https://www.facebook.com/profile.php?id=61556146266910" target="_blank">
-            <img src="images/facebook-logo.webp" alt="fb icon">
+          <img src="images/facebook-logo.webp" alt="fb icon" loading="lazy">
         </a>
       </div>
       <div class="sm-logos">
         <a href="https://twitter.com" target="_blank">
-          <img src="images/x-logo.webp" alt="X icon" />
+          <img src="images/x-logo.webp" alt="X icon" loading="lazy" />
         </a>
       </div>
       <div class="sm-logos">
         <a href="https://instagram.com" target="_blank">
-          <img src="images/instagram-logo.webp" alt="instagram icon">
+          <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy">
       </div>
-      
-    </footer>
+      div for the menu
+      <div class="footer-menu">
+        <ul>
+          <li><a class="current-menu-item" href="./index.html">Home</a></li>
+          <li><a class="menu-item" href="./job-search.html">Job Search</a></li>
+          <li><a class="link" href="./job-help.html">Job Help</a></li>
+          <li><a class="link" href="./about-us.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer> -->
+  <!-- <script type="module" src="./scripts/script.js"></script> -->
+  <footer>
+    <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
+    <p><a href="contactus.html" target="_blank">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook-logo.webp" alt="fb icon" loading="lazy">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/x-logo.webp" alt="X icon" loading="lazy" >
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy">
+        </a>
+    </div>
+</footer>
+</body>
 
-    <!-- <script type="module" src="./scripts/script.js"></script> -->
-  </body>
+<!-- div for the copywrite -->
+<div class="copywrite">
+  <p>&copy; 2022 Know Your Worth. All rights reserved.</p>
+</div>
 </html>
