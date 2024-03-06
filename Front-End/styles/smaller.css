@@ -70,7 +70,50 @@
     margin-left:-3%;
     margin-right: -3%;
   }
+  #team-container{
+    grid-row: 3;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    width: 70%;
+  }
 
+
+  #team-container-1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 70%;
+  }
+  #team-container-1 .team-member-1{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2em;
+    background-color: #e4dfdf;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 5em;
+  }
+  #team-container-1 .team-member-2{
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2em;
+    background-color: #e4dfdf;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 5em;
+  }
+
+
+
+  
 
   .team-member {
     display: grid;
@@ -81,8 +124,7 @@
     border-radius: 10px;
     margin-bottom: 5em;
   }
-  .team-member:nth-child(even) img {
-    /* Styles for even team member images */
+  .team-member:nth-child(even) img, .team-member:nth-child(odd) img {
     width: 150px;
     height: 100px;
     grid-column: 1;
@@ -93,7 +135,8 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   }
   
-  .team-member:nth-child(odd) img {
+  
+  .team-member-1:nth-child(odd) img, .team-member-1:nth-child(even) img , .team-member-2:nth-child(odd) img, .team-member-2:nth-child(even) img {
     width: 150px;
     height: 100px;
     grid-column: 1;
