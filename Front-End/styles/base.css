@@ -122,7 +122,6 @@ h6 {
 
 .divider::after {
   right: -5px;
-
 }
 
 .divider::before {
@@ -171,10 +170,6 @@ footer {
   justify-content: space-around;
 }
 
-.sm-logos img {
-  width: 30px;
-  height: auto;
-}
 .logo-section {
   display: flex;
   justify-content: left;
@@ -183,36 +178,26 @@ footer {
 }
 
 .logo-section a img {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   padding-left: 3em;
-}
-
-/* footer{
-  background-color:var(#fff);
-  padding: 25px 50px;
+  margin-top: 20px;
 }
 
 footer a{
   text-decoration: none;
-  margin-top: 200px;
-  background-color: var(--nav-background-color);
-  color:  var(--nav-link-color);
-}
-
-footer a:hover{
-  background-color: #26719D;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-footer p{
+  color:  black;
   font-size: 1.2em;
 }
 
-footer p a:hover{
+footer a:hover{
   text-decoration: underline;
   font-family: Roboto, Helvetica, sans-serif;
-} */
+}
+
+ul{
+  list-style-type: none;
+}
 
 /* ---------------------job interview resources----------------------- */
 .job-container {
