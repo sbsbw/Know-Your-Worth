@@ -1,3 +1,4 @@
+# SalaryData File Information
 SalaryData.html is a data analysis report of salarydata.csv
 
 SalaryData.qmd is the quarto file that houses the cleaning of the data and analysis report
