@@ -3,7 +3,7 @@ import "./App1.css";
 
 export default function AppAboutUs() {
   return (
-    <div classname="about-us-page">
+    <div className="about-us-page">
       {/* body open */}
       <div>
         {/* header open */}
@@ -17,24 +17,24 @@ export default function AppAboutUs() {
         />
         {/* <!-- <button id="myBtn"></button> --> */}
         <nav>
-          <ul class="menu">
+          <ul className="menu">
             <li>
-              <a class="current-menu-item" href="./index.html">
+              <a className="current-menu-item" href="./index.html">
                 Home
               </a>
             </li>
             <li>
-              <a class="menu-item" href="./job-search.html">
+              <a className="menu-item" href="./job-search.html">
                 Job Search
               </a>
             </li>
             <li>
-              <a class="link" href="./job-help.html">
+              <a className="link" href="./job-help.html">
                 Job Help
               </a>
             </li>
             <li>
-              <a class="link" href="./about-us.html">
+              <a className="link" href="./about-us.html">
                 About Us
               </a>
             </li>
@@ -44,9 +44,9 @@ export default function AppAboutUs() {
       {/* header close */}
       <div>
         {/* main close */}
-        <div class="container">
+        <div className="container">
           <h1>About Us</h1>
-          <div class="divider"></div>
+          <div className="divider"></div>
           <picture>
             <source
               media="(max-width: 800px)"
@@ -68,8 +68,8 @@ export default function AppAboutUs() {
             their dream job.
           </p>
         </div>
-        <div class="divider"></div>
-        <div class="container">
+        <div className="divider"></div>
+        <div className="container">
           <h1>Our Mission</h1>
           <p>
             Welcome to Know Your Worth, your trusted companion in the journey to
@@ -114,10 +114,10 @@ export default function AppAboutUs() {
             because when you know your worth, the possibilities are endless.
           </p>
         </div>
-        <div class="divider"></div>
+        <div className="divider"></div>
         <h1>Our Team</h1>
         <div id="team-container">
-          <div class="team-member">
+          <div className="team-member">
             <img src="images/team-member-1.jpg" alt="Logan" loading="lazy" />
             <h2>Logan</h2>
             <p>
@@ -125,7 +125,7 @@ export default function AppAboutUs() {
               scelerisque vitae nunc ut dictum. Suspendisse potenti. Vestibulum.
             </p>
           </div>
-          <div class="team-member">
+          <div className="team-member">
             <img
               src="images/team-member-2.jpg"
               alt="Devun Durst"
@@ -137,7 +137,7 @@ export default function AppAboutUs() {
               scelerisque vitae nunc ut dictum. Suspendisse potenti. Vestibulum.
             </p>
           </div>
-          <div class="team-member">
+          <div className="team-member">
             <img
               src="images/team-member-3.jpg"
               alt="Sean Walker"
@@ -151,7 +151,7 @@ export default function AppAboutUs() {
           </div>
         </div>
         <div id="team-container-1">
-          <div class="team-member-1">
+          <div className="team-member-1">
             <img src="images/team-member-4.jpg" alt="Hunter" loading="lazy" />
             <h2>Hunter</h2>
             <p>
@@ -159,7 +159,7 @@ export default function AppAboutUs() {
               scelerisque vitae nunc ut dictum. Suspendisse potenti. Vestibulum.
             </p>
           </div>
-          <div class="team-member-2">
+          <div className="team-member-2">
             <img src="images/team-member-5.jpg" alt="Lincoln" loading="lazy" />
             <h2>Lincoln</h2>
             <p>
@@ -172,8 +172,8 @@ export default function AppAboutUs() {
       {/* main close */}
       <div>
         {/* footer open*/}
-        <div class="logo-section">
-          <div class="sm-logos">
+        <div className="logo-section">
+          <div className="sm-logos">
             <a
               href="https://www.facebook.com/profile.php?id=61556146266910"
               target="_blank"
@@ -185,12 +185,12 @@ export default function AppAboutUs() {
               />
             </a>
           </div>
-          <div class="sm-logos">
+          <div className="sm-logos">
             <a href="https://twitter.com" target="_blank">
               <img src="images/x-logo.webp" alt="X icon" loading="lazy" />
             </a>
           </div>
-          <div class="sm-logos">
+          <div className="sm-logos">
             <a href="https://instagram.com" target="_blank">
               <img
                 src="images/instagram-logo.webp"
@@ -200,25 +200,25 @@ export default function AppAboutUs() {
             </a>
           </div>
           {/* <!-- div for the menu --> */}
-          <div class="footer-menu">
+          <div className="footer-menu">
             <ul>
               <li>
-                <a class="current-menu-item" href="./index.html">
+                <a className="current-menu-item" href="./index.html">
                   Home
                 </a>
               </li>
               <li>
-                <a class="menu-item" href="./job-search.html">
+                <a className="menu-item" href="./job-search.html">
                   Job Search
                 </a>
               </li>
               <li>
-                <a class="link" href="./job-help.html">
+                <a className="link" href="./job-help.html">
                   Job Help
                 </a>
               </li>
               <li>
-                <a class="link" href="./about-us.html">
+                <a className="link" href="./about-us.html">
                   About Us
                 </a>
               </li>
@@ -227,7 +227,7 @@ export default function AppAboutUs() {
         </div>
       </div>
       {/* footer close*/}
-      <div class="copywrite">
+      <div className="copywrite">
         <p>&copy; 2022 Know Your Worth. All rights reserved.</p>
       </div>
       {/* close body */}
