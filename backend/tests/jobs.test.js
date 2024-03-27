@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Job = require('../src/models/jobs');
+const Job = require('../models/jobs');
 
 describe('Job Model', () => {
   // Run this hook before each test case

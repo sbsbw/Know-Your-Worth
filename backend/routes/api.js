@@ -35,9 +35,9 @@ router.get('/jobs', async (req, res, next) => {
 });
 // Route to retrieve a job by its title
 router.get('/jobs/:jobTitle', async (req, res) => {
-  const { title } = req.params;
+  const { jobTitle } = req.params;
   try {
-    const jobByTitle = await Job.findOne({ jobTitle: title });
+    const jobByTitle = await Job.findOne({ jobTitle: jobTitle });
     res.json(jobByTitle);
   } catch (error) {
     console.error('Error retrieving job:', error);

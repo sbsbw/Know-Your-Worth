@@ -3,7 +3,7 @@ const {mongodbUrl} = require('../config'); // Use require for config
 
 // Define job schema
 const jobSchema = new mongoose.Schema({
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+  userId: { type: String, ref: 'User', required: true },
   jobTitle: { type: String, required: true },
   company: { type: String, required: true },
   salary: { type: Number, required: true },
@@ -33,3 +33,5 @@ mongoose.connect(mongodbUrl, { useNewUrlParser: true, useUnifiedTopology: true }
   .catch(err => {
     console.error('MongoDB connection error:', err);
   });
+
+  module.exports = Job; // Export the Job model

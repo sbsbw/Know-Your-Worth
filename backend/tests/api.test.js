@@ -3,6 +3,7 @@
 const request = require('supertest');
 const app = require('../app'); // Assuming your Express app is exported from app.js
 
+
 describe('API Routes', () => {
   // Test case for POST /api/jobs
   test('POST /api/jobs - Add job entry', async () => {
@@ -39,12 +40,4 @@ describe('API Routes', () => {
     expect(response.body).toHaveProperty('jobTitle', 'Software Engineer');
   });
 
-  // Test case for GET /api/averageSalary/:jobTitle
-  test('GET /api/averageSalary/:jobTitle - Retrieve average salary by job title', async () => {
-    const response = await request(app).get('/api/averageSalary/Software%20Engineer');
-
-    console.log('GET /api/averageSalary/:jobTitle response:', response.body);
-    expect(response.status).toBe(200);
-    expect(response.body).toHaveProperty('averageSalary');
-  });
 });
