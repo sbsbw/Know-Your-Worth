@@ -24,7 +24,7 @@ mongoose.connect(mongodbUrl, { useNewUrlParser: true, useUnifiedTopology: true }
     Job.find()
       .then(jobs => {
         // Print the retrieved jobs to the console
-        console.log('Retrieved jobs:', jobs);
+        // console.log('Retrieved jobs:', jobs);
       })
       .catch(error => {
         console.error('Error retrieving jobs:', error);

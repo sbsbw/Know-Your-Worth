@@ -26,7 +26,7 @@ export default function App() {
               </a>
             </li>
             <li>
-              <a className="menu-item" href="./job-search.html">
+              <a className="menu-item" href="./src/job-search.html">
                 Job Search
               </a>
             </li>

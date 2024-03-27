@@ -1,10 +1,20 @@
 const express = require('express'); // for web server
 const mongoose = require('mongoose'); // for database
+const cors = require('cors');
 const apiRoutes = require('./routes/api'); // for API routes
 const helmet = require('helmet'); // for basic security measures
 const { PORT, mongodbUrl } = require('./config'); // Use require for config
 
-const app = express(); // create express app
+const app = express();
+
+// Use helmet for basic security measures
+app.use(helmet());
+
+// Use cors middleware to handle CORS
+app.use(cors());
+
+// Middleware to parse JSON bodies
+app.use(express.json());
 
 // Database connection
 mongoose
@@ -20,19 +30,14 @@ mongoose
     console.error(err); 
   });
 
-app.get('/', (req, res) => {
-  console.log(req);
-  return res.status(200).send('you did it!');
-});
+// Route for handling API requests
+app.use('/api', apiRoutes);
 
-app.use(helmet()); // sets various HTTP headers to help protect your app
-app.use(express.json()); // parses incoming requests with JSON payloads
-app.use('/api', apiRoutes); // use API routes
-
-// Error handling middleware
+app.use('/api', (req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+})
+// Error handling middleware for global errors
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.status(500).json({ error: 'Internal Server Error' });
 });
-
-module.exports = app;
