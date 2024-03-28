@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analysis</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+  <h2>Data Analysis</h2>
+  <label for="jobTitleInput">Enter Job Title:</label>
+  <input type="text" id="jobTitleInput">
+  <button onclick="searchByJobTitle()">Search</button>
+  <div id="analysisContainer"></div>
+
+  <!-- Add a canvas element for the chart -->
+  <canvas id="percentilesChart" width="400" height="200"></canvas>
+
+  <script>
+    const percentileValues = [10, 25, 50, 75, 90]; // Define percentileValues globally
+    let chartInstance = null; // Global variable to store chart instance
+
+    function searchByJobTitle() {
+      const jobTitleInput = document.getElementById('jobTitleInput');
+      if (!jobTitleInput || !jobTitleInput.value) {
+        document.getElementById('analysisContainer').innerText = 'Please enter a job title.';
+        return;
+      }
+      const jobTitle = jobTitleInput.value.trim(); // Trim whitespace
+      axios.get('http://localhost:3000/api/jobs/')
+        .then(response => {
+          const searchJobTitle = jobTitle.toLowerCase(); // Convert input to lowercase for case-insensitive comparison
+          const individuals = response.data.filter(individual => individual['Job Title'] && individual['Job Title'].toLowerCase() === searchJobTitle);
+
+          if (individuals.length > 0) {
+            const salaries = individuals.map(individual => parseInt(individual.Salary));
+
+            // Sort salaries in ascending order
+            salaries.sort((a, b) => a - b);
+
+            const percentilesData = calculatePercentiles(salaries);
+
+            // Display analysis results
+            displayAnalysisResults(jobTitle, salaries, percentilesData);
+
+            // Draw or update the chart
+            drawOrUpdateChart(percentilesData);
+          } else {
+            document.getElementById('analysisContainer').innerText = `No individuals found with job title "${jobTitle}"`;
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+
+    function calculatePercentiles(salaries) {
+      const percentiles = [];
+      for (const percentile of percentileValues) {
+        const index = Math.ceil((percentile / 100) * salaries.length) - 1;
+        percentiles.push(salaries[index]);
+      }
+      return percentiles;
+    }
+
+    function displayAnalysisResults(jobTitle, salaries, percentilesData) {
+      const analysisContainer = document.getElementById('analysisContainer');
+      const minSalary = Math.min(...salaries);
+      const maxSalary = Math.max(...salaries);
+      const meanSalary = salaries.reduce((sum, salary) => sum + salary, 0) / salaries.length;
+
+      analysisContainer.innerHTML = `
+        <p><strong>Minimum Salary:</strong> $${minSalary}</p>
+        <p><strong>Maximum Salary:</strong> $${maxSalary}</p>
+        <p><strong>Mean Salary:</strong> $${meanSalary.toFixed(2)}</p>
+        <p><strong>Percentiles:</strong></p>
+        <ul>
+          ${percentilesData.map((percentile, index) => `<li>${percentileValues[index]}th percentile: $${percentile}</li>`).join('')}
+        </ul>
+      `;
+    }
+
+    function drawOrUpdateChart(percentilesData) {
+      const percentilesChartCanvas = document.getElementById('percentilesChart').getContext('2d');
+      if (!chartInstance) {
+        chartInstance = new Chart(percentilesChartCanvas, {
+          type: 'bar',
+          data: {
+            labels: ['10th', '25th', '50th', '75th', '90th'],
+            datasets: [{
+              label: 'Percentiles',
+              data: percentilesData,
+              backgroundColor: 'rgba(54, 162, 235, 0.6)',
+              borderColor: 'rgba(54, 162, 235, 1)',
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true
+                }
+              }]
+            }
+          }
+        });
+      } else {
+        chartInstance.data.datasets[0].data = percentilesData;
+        chartInstance.update();
+      }
+    }
+  </script>
+</body>
+</html>
