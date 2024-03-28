@@ -1,25 +1,10 @@
-import "./App.css";
-import "./App1.css";
+import "../styles/App.css";
+import "../styles/App1.css";
 
 export default function AppJobHelp() {
   return (
     <div className="job-help-page">
     {/* page open */}
-      <div>
-      {/* header open */}
-        <img id="logo" src="./images/money-logo.png" alt="Logo" height="auto" width="100px" loading="lazy"/>
-        {/* <!-- <button id="myBtn"></button> --> */}
-        <nav>
-          <ul className="menu">
-            <li><a className="current-menu-item" href="./index.html">Home</a></li>
-            <li><a className="menu-item" href="./job-search.html">Job Search</a></li>
-            <li><a className="link" href="./job-help.html">Job Help</a></li>
-            <li><a className="link" href="./about-us.html">About Us</a></li>
-          </ul>
-        </nav>
-      {/* header close */}
-      </div>
-      
       <div id="main-job-help">
       {/* main open */}
         <div className="container">

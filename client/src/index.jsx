@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import App-job-help from "./AppJobHelp";
+// import App-job-help from "./AppJobHelp";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
 );
-ReactDOM.createRoot(document.getElementById("jobHelp")).render(
-  <React.StrictMode>
-    <App-job-help />
-  </React.StrictMode>,
-);
+

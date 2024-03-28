@@ -1,0 +1,92 @@
+Header:
+
+      <div>
+        {/* header */}
+        <img
+          id="logo"
+          src={img1}
+          alt="Logo"
+          height="auto"
+          width="100px"
+          loading="lazy"
+        />
+        <nav>
+          <ul className="menu">
+            <li>
+              <a className="current-menu-item" href="">
+                Home
+              </a>
+            </li>
+            <li>
+              {/* <a className="menu-item" href="./src/App"> WE NEED TO FIX THIS ONE */}
+                Job Search
+              {/* </a> */}
+            </li>
+            <li>
+              <a className="link" href="./src/App-job-help.jsx">
+                Job Help
+              </a>
+            </li>
+            <li>
+              <a className="link" href="./about-us.html">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      {/* This is for the header. */}
+
+
+
+App.jsx:
+
+
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./pages/App-home";
+import Job_help from "./pages/App-job-help";
+import About_us from "./pages/App-about-us";
+import Search_results from "./pages/App-search-results";
+
+export default function App() {
+  return(
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/about-us" exact>
+          <About_us />
+        </Route>
+        <Route path="/job-help" exact>
+          <Job_help />
+        </Route>
+        <Route path="/search-results" exact>
+          <Search_results />
+        </Route>
+      </Switch>
+    </Router>
+  )
+}
+
+
+
+App.jsx:
+
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/about-us" exact>
+          <About_us />
+        </Route>
+        <Route path="/job-help" exact>
+          <Job_help />
+        </Route>
+        <Route path="/search-results" exact>
+          <Search_results />
+        </Route>
+      </Switch>
+    </Router>
