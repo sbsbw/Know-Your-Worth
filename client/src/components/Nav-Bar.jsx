@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/App.css";
-import "../styles/App1.css";
+import '../styles/App.css'
+import '../styles/App1.css'
 import img1 from "../images/money-logo.png";
 import { Link } from "react-router-dom";
 

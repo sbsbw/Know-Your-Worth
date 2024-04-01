@@ -1,5 +1,8 @@
 import "../styles/App.css";
 import "../styles/App1.css";
+import img6 from "../images/facebook-logo.webp"
+import img7 from "../images/x-logo.webp"
+import img8 from "../images/instagram-logo.webp"
 
 export default function AppAboutUs() {
   return (
@@ -134,64 +137,6 @@ export default function AppAboutUs() {
       </div>
       {/* main close */}
       <div>
-        {/* footer open*/}
-        <div className="logo-section">
-          <div className="sm-logos">
-            <a
-              href="https://www.facebook.com/profile.php?id=61556146266910"
-              target="_blank"
-            >
-              <img
-                src="images/facebook-logo.webp"
-                alt="fb icon"
-                loading="lazy"
-              />
-            </a>
-          </div>
-          <div className="sm-logos">
-            <a href="https://twitter.com" target="_blank">
-              <img src="images/x-logo.webp" alt="X icon" loading="lazy" />
-            </a>
-          </div>
-          <div className="sm-logos">
-            <a href="https://instagram.com" target="_blank">
-              <img
-                src="images/instagram-logo.webp"
-                alt="instagram icon"
-                loading="lazy"
-              />
-            </a>
-          </div>
-          {/* <!-- div for the menu --> */}
-          <div className="footer-menu">
-            <ul>
-              <li>
-                <a className="current-menu-item" href="./index.html">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a className="menu-item" href="./job-search.html">
-                  Job Search
-                </a>
-              </li>
-              <li>
-                <a className="link" href="./job-help.html">
-                  Job Help
-                </a>
-              </li>
-              <li>
-                <a className="link" href="./about-us.html">
-                  About Us
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      {/* footer close*/}
-      <div className="copywrite">
-        <p>&copy; 2022 Know Your Worth. All rights reserved.</p>
       </div>
       {/* close body */}
     </div>

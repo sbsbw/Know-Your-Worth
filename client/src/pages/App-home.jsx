@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/App.css";
 import "../styles/App1.css";
-import img1 from "../images/money-logo.png";
 import img2 from "../images/salary-bell-curve.webp"
 import img3 from "../images/US-salary-map.webp"
 import img4 from "../images/job-interview.webp"
@@ -92,67 +91,7 @@ export default function App_home() {
       </div>
       {/* Close main */}
       <div>
-        {/* footer */}
-        {/* div for the logos */}
-        <div className="logo-section">
-          <div className="sm-logos">
-            <a
-              href="https://www.facebook.com/profile.php?id=61556146266910"
-              target="_blank"
-            >
-              <img
-                src={img6}
-                alt="fb icon"
-                loading="lazy"
-              />
-            </a>
-          </div>
-          <div className="sm-logos">
-            <a href="https://twitter.com" target="_blank">
-              <img src={img7} alt="X icon" loading="lazy" />
-            </a>
-          </div>
-          <div className="sm-logos">
-            <a href="https://instagram.com" target="_blank">
-              <img
-                src={img8}
-                alt="instagram icon"
-                loading="lazy"
-              />
-            </a>
-          </div>
-          {/* div for the menu */}
-          <div className="footer-menu">
-            <ul>
-              <li>
-                <a className="current-menu-item" href="./index.html">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a className="menu-item" href="./job-search.html">
-                  Job Search
-                </a>
-              </li>
-              <li>
-                <a className="link" href="./job-help.html">
-                  Job Help
-                </a>
-              </li>
-              <li>
-                <a className="link" href="./about-us.html">
-                  About Us
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      {/* footer */}
-      <div className="copywrite">
-        <p>&copy; 2022 Know Your Worth. All rights reserved.</p>
-      </div>
-    </div> /* Body ths one is ok like this because its not inside*/
-    /* <link rel="stylesheet" href="" /> */
-  );
-}
+    </div> 
+    </div>
+  );}
+  
