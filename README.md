@@ -2,32 +2,6 @@
 
 This repository contains the codebase for the team project.
 
-## GitHub Workflow Rules
-- Work on individual branches.
-- Perform Monday merges.
-- Maintain a clean GitHub repository with descriptive comments.
-- Attach Markdown documents to relevant sections.
-
-### Monday
-- Merge changes and plan for the week.
-
-### Tuesday
-- Conduct code reviews.
-
-### Wednesday
-- Utilize in-class time effectively.
-
-### Thursday
-- Every other week: Meet with Brother Grimmett.
-- On alternate weeks: Utilize the career center.
-
-### Friday
-- Conduct virtual meetings and stand-ups.
-
-### Saturday/Sunday
-- Allocate time for personal study and family activities.
-- Communication is only permitted for sharing memes.
-
 ## Codebase Overview
 ### `app.js` File (Backend)
 - Configures the web server using Express.
