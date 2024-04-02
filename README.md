@@ -48,3 +48,23 @@ This codebase provides a foundation for building a RESTful API with Node.js, Exp
   - `PORT`: Specifies the port number for the server, defaulting to 3000 if not specified in the environment variables.
   - `mongodbUrl`: Specifies the connection URL for MongoDB, including credentials, database name, and additional options like retryWrites and appName.
 - These variables are exported for use in other parts of the application.
+
+
+
+`jest.config.js`:
+- Configures Jest, a JavaScript testing framework.
+- Sets the testEnvironment property to 'node', indicating that tests will run in a Node.js environment.
+`index.html`:
+- Entry point for the client-side application.
+- Includes necessary meta tags for character set and viewport.
+- Sets the title of the page to "Know Your Worth" and specifies a favicon.
+- Links to CSS files for styling the application.
+- Contains a <div> element with the id "root" where the React application will be mounted.
+- Includes a <script> tag to load the main JavaScript file (main.jsx) responsible for rendering the   React application.
+`vite.config.js`:
+- Configures Vite, a frontend build tool for modern web development.
+- Imports `defineConfig` from Vite and the React plugin.
+- Exports a configuration object using `defineConfig()`.
+- The `plugins` array includes the `react()` plugin to enable React support in Vite.
+- Additional configuration options can be added within the `defineConfig()` function to customize Vite's behavior further.
+- These files collectively set up the testing environment, define the structure of the HTML page, and configure the development environment for a React application.
