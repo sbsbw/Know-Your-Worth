@@ -5,9 +5,6 @@ import img2 from "../images/salary-bell-curve.webp"
 import img3 from "../images/US-salary-map.webp"
 import img4 from "../images/job-interview.webp"
 import img5 from "../images/salary-sm.webp"
-import img6 from "../images/facebook-logo.webp"
-import img7 from "../images/x-logo.webp"
-import img8 from "../images/instagram-logo.webp"
 
 export default function App_home() {
   return (

@@ -2,9 +2,6 @@ import "../styles/App.css";
 import "../styles/App1.css";
 import hiredSm from "../images/hired-sm.webp";
 import hired from "../images/hired.webp";
-import img6 from "../images/facebook-logo.webp"
-import img7 from "../images/x-logo.webp"
-import img8 from "../images/instagram-logo.webp"
 
 export default function AppJobHelp() {
   return (
