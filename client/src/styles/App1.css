@@ -106,6 +106,7 @@
     margin: 0 auto;
     width: 70%;
   }
+
   #team-container-1 .team-member-1{
     grid-column: 1;
     grid-row: 1;
@@ -117,6 +118,7 @@
     border-radius: 10px;
     margin-bottom: 5em;
   }
+
   #team-container-1 .team-member-2{
     grid-column: 1;
     grid-row: 2;
@@ -144,7 +146,8 @@
   }
   .team-member:nth-child(even) img, .team-member:nth-child(odd) img {
     width: 150px;
-    height: 100px;
+    min-height: 200px;
+    height: auto;
     grid-column: 1;
     margin: 0 auto;
     object-fit: cover;
@@ -156,7 +159,7 @@
 
   .team-member-1:nth-child(odd) img, .team-member-1:nth-child(even) img , .team-member-2:nth-child(odd) img, .team-member-2:nth-child(even) img {
     width: 150px;
-    height: 100px;
+    height: auto;
     grid-column: 1;
     margin: 0 auto;
     object-fit: cover;
